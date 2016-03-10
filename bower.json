@@ -1,0 +1,25 @@
+{
+  "name": "grunt-amos-bower-shim-to-rjs",
+  "description": "auto configuration the dependencies from bower.json to target rjs file.",
+  "main": "index.js",
+  "authors": [
+    "bhakarut homchit <bhakarut.piboolsak@allianz.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "shim"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0"
+  }
+}
