@@ -1,5 +1,5 @@
 /*
- grunt-amos-bower-shim-to-rjs
+ grunt-bower-shim-to-rjs
  * Copyright (c) 2015 Bhakarut Piboolsak, contributors
  * Licensed under the MIT license.
  */
@@ -12,6 +12,9 @@ var fs = require('fs');
 var path = require('path');
 var buildConfig = require('../libs/build-config');
 var writeConfig = require('../libs/write-config');
+var chalk = require('chalk');
+var success = chalk.green;
+var danger = chalk.black.bgRed;
 
 module.exports = function (opts, callback) {
     var doneFn = callback || function () {};
@@ -48,7 +51,7 @@ module.exports = function (opts, callback) {
              })
              .on('error', function (err) {
                  console.error(danger('ERR'), process.argv.slice(2).join(' '), '\n');
-                 console.error(opts.debug ? err.stack : err.message);
+                 console.error(danger('ERR'), opts.debug ? err.stack : err.message);
                  process.exit(err.code || 1);
              });
     }

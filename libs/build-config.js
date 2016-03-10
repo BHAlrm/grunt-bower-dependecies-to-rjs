@@ -1,5 +1,7 @@
 var _ = require('lodash');
-
+var chalk = require('chalk');
+var success = chalk.green;
+var danger = chalk.black.bgRed;
 /**
  *
  * @param dependencyGraph -- bower dependency graph generated from bower utility

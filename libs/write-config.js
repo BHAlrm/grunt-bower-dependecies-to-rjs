@@ -2,6 +2,9 @@
 var requirejs = require('requirejs/bin/r.js');
 var _ = require('lodash');
 var fs = require('fs');
+var chalk = require('chalk');
+var success = chalk.green;
+var danger = chalk.black.bgRed;
 
 /**
  *
@@ -33,7 +36,7 @@ function writeConfig(generatedConfig, originalConfig, rjsConfigPath, callback) {
             return originRjsConfig;
         });
         fs.writeFileSync(rjsConfigPath, rjsConfig, 'utf-8');
-        console.info('Updated RequireJS config with installed Bower components');
+        console.info(success('Updated RequireJS shim config with installed Bower components'));
         callback(generatedConfig);
     });
 
