@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.mathregit.group:bhakaruth/grunt-amos-bower-shim-to-rjs.git"
+    "url": "git@github.com:BHAlrm/grunt-bower-dependecies-to-rjs.git"
   },
   "keywords": [
     "shim"
   ],
-  "author": "bhakarut homchit <bhakarut.piboolsak@allianz.com>",
-  "license": "ISC",
+  "author": "Bhakarut Piboolsak <veigaralrm@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "bower": "^1.7.7",
     "file-system": "^2.2.1",

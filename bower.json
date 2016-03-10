@@ -3,9 +3,9 @@
   "description": "auto configuration the dependencies from bower.json to target rjs file.",
   "main": "index.js",
   "authors": [
-    "bhakarut homchit <bhakarut.piboolsak@allianz.com>"
+    "Bhakarut Piboolsak <veigaralrm@gmail.com>"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "shim"
   ],
