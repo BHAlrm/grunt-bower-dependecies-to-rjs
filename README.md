@@ -102,4 +102,4 @@ requirejs.config({
 ```
 
 ## License
-[MIT license]
+[BSD license](http://opensource.org/licenses/bsd-license.php) and copyright Bhakarut
