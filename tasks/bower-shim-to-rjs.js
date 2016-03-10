@@ -19,14 +19,5 @@ function task() {
 module.exports = function (grunt) {
     // make sure conflicting grunt tasks are loaded before registering tasks
     loadGruntTasks(grunt, {pattern: ['grunt-bower*', '!grunt-bower-dependencies-to-rjs'] });
-
-    // only register bower task if it's not already registered by another plugin
-    if (!grunt.task.exists('bower')) {
-        grunt.registerMultiTask('bower', 'Wire-up Bower components in RJS shim config', function () {
-            grunt.log.warn('The task "bower" is deprecated for this module. Use "bowerShimToRjs" instead');
-            task.call(this);
-        });
-    }
-
     grunt.registerMultiTask('bowerShimToRjs', 'Wire-up Bower dependencies in RJS config', task);
 };

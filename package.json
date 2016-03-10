@@ -41,6 +41,6 @@
     "grunt": ">=0.4.0"
   },
   "files": [
-    "tasks/grunt-amos-bower-shim-to-rjs.js"
+    "tasks/bower-shim-to-rjs.js"
   ]
 }
