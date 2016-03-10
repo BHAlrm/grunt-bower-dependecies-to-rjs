@@ -85,21 +85,5 @@ requirejs.config({
 });
 ```
 
-You still need to create a path for *your* js files. This tool will only create paths for third party libraries specified in `bower.json`.
-
-``` js
-requirejs.config({
-  shim: {
-    app: {
-        deps: [
-            'component1',
-            'component2'
-        ]
-    }
-  },
-  paths: {}
-});
-```
-
 ## License
 [BSD license](http://opensource.org/licenses/bsd-license.php) and copyright Bhakarut
