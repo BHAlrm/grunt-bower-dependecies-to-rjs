@@ -62,7 +62,7 @@ Type: `Array`
 Specify components to be excluded from being added to the RequireJS config.
 
 ```js
-bowerRequirejs: {
+bowerShimToRjs: {
   all: {
     rjsConfig: 'scripts/main.js',
     options: {
