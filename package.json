@@ -2,7 +2,7 @@
   "name": "grunt-bower-dependencies-to-rjs",
   "version": "0.0.2",
   "description": "auto configuration the dependencies from bower.json to target rjs file.",
-  "main": "index.js",
+  "main": "libs/index.js",
   "scripts": {
     "pretest": "bower i",
     "test": "grunt test"
@@ -39,8 +39,5 @@
   "peerDependencies": {
     "bower": "^1.7.7",
     "grunt": ">=0.4.0"
-  },
-  "files": [
-    "tasks/bower-shim-to-rjs.js"
-  ]
+  }
 }
