@@ -4,13 +4,8 @@ var bowerShimRJS = require('../libs/index');
 function task() {
     var options = this.options({
         config: this.data.rjsConfig,
-        exclude: [],
-        baseUrl: '',
-        transitive: false,
-        excludeDev: false
+        exclude: []
     });
-
-    options['exclude-dev'] = options.excludeDev;
 
     bowerShimRJS(options, this.async());
 }
