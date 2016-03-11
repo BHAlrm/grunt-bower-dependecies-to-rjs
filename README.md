@@ -84,7 +84,8 @@ requirejs.config({
   paths: {}
 });
 ```
+## Credit
+Thanks for grunt-bower-requirejs's contributor(https://github.com/yeoman/grunt-bower-requirejs). I use theire module for my reference.
 
 ## License
-Thanks for grunt-bower-requirejs's contributor. I use theire module for my reference.
 [MIT license](http://spdx.org/licenses/MIT) and copyright Bhakarut
