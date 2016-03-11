@@ -74,8 +74,8 @@ bowerShimToRjs: {
 
 #### applicationName
 
-Default: `[]`  
-Type: `Array`
+Default: `name of application that initial in bower.json`  
+Type: `String`
 
 Specify compress application filename it being added to the RequireJS shim config 
 
