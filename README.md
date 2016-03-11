@@ -32,7 +32,7 @@ grunt.initConfig({
 
 grunt.loadNpmTasks('grunt-bower-dependencies-to-rjs');
 
-grunt.registerTask('default', ['bower']);
+grunt.registerTask('default', ['bowerShimToRjs']);
 ```
 
 ## Documentation
