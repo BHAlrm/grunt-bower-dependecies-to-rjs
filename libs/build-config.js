@@ -31,7 +31,7 @@ function buildConfig(dependencyGraph, excludedDependencies, application) {
     if(dependencyGraph.pkgMeta){
         var applicationDependencies = _.keys(dependencyGraph.pkgMeta.dependencies);
         if(application.exclude){
-            applicationDependencies = _.remove(applicationDependencies, function(n){ return application.exclude.indexOf(n) > -1; })
+            _.remove(applicationDependencies, function(n){return application.exclude.indexOf(n) > -1; });
         }
 
         if(application.overwrite){
