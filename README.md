@@ -72,6 +72,24 @@ bowerShimToRjs: {
 }
 ```
 
+#### applicationName
+
+Default: `[]`  
+Type: `Array`
+
+Specify compress application filename it being added to the RequireJS shim config 
+
+```js
+bowerShimToRjs: {
+  all: {
+    rjsConfig: 'scripts/main.js',
+    options: {
+      applicationName: 'yourCompressApplicationFileName'
+    }
+  }
+}
+```
+
 ## Things to remember
 
 ### Config file
