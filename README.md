@@ -86,4 +86,5 @@ requirejs.config({
 ```
 
 ## License
-[BSD license](http://opensource.org/licenses/bsd-license.php) and copyright Bhakarut
+Thanks for grunt-bower-requirejs's contributor. I use theire module for my reference.
+[MIT license](http://spdx.org/licenses/MIT) and copyright Bhakarut
