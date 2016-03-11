@@ -36,7 +36,7 @@ module.exports = function (opts, callback) {
                      var generatedConfig;
 
                      try {
-                         generatedConfig = buildConfig(dependencyGraph, options.exclude);
+                         generatedConfig = buildConfig(dependencyGraph, options.exclude, options.applicationName);
                      } catch (err) {
                          return doneFn(false);
                      }

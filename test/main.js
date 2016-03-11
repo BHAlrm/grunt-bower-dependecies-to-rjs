@@ -1,12 +1,11 @@
 require.config({
     paths: {
-        app: 'app'
+
     },
     shim: {
-        angular: {
-            exports: 'angular',
+        app: {
             deps: [
-
+                'angular'
             ]
         }
     },

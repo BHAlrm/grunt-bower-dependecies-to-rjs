@@ -4,7 +4,8 @@ var bowerShimRJS = require('../libs/index');
 function task() {
     var options = this.options({
         config: this.data.rjsConfig,
-        exclude: []
+        exclude: [],
+        applicationName: ''
     });
 
     bowerShimRJS(options, this.async());

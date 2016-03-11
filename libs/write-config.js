@@ -4,7 +4,6 @@ var _ = require('lodash');
 var fs = require('fs');
 var chalk = require('chalk');
 var success = chalk.green;
-var danger = chalk.black.bgRed;
 
 /**
  *

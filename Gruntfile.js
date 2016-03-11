@@ -12,7 +12,10 @@ module.exports = function (grunt) {
         },
         bowerShimToRjs:{
             test: {
-                rjsConfig: 'test/main.js'
+                rjsConfig: 'test/main.js',
+                options:{
+                    applicationName: 'app'
+                }
             }
         }
     });
