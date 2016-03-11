@@ -72,7 +72,7 @@ bowerShimToRjs: {
 }
 ```
 
-#### applicationName
+#### application.name
 
 Default: `name of application that initial in bower.json`  
 Type: `String`
@@ -84,7 +84,52 @@ bowerShimToRjs: {
   all: {
     rjsConfig: 'scripts/main.js',
     options: {
-      applicationName: 'yourCompressApplicationFileName'
+      application: {
+        name: 'yourCompressApplicationFileName'
+      }
+    }
+  }
+}
+```
+
+#### application.exclude
+
+Default: `[]`
+Type: `Array`
+
+Specify components of main application to be excluded from being added to the RequireJS config.
+
+```js
+bowerShimToRjs: {
+  all: {
+    rjsConfig: 'scripts/main.js',
+    options: {
+      application: {
+        exclude: 'yourCompressApplicationFileName'
+      }
+    }
+  }
+}
+```
+
+
+#### application.overwrite
+
+Default: `[]`
+Type: `Array`
+
+Specify components of main application to be over write name from being added to the RequireJS config.
+
+```js
+bowerShimToRjs: {
+  all: {
+    rjsConfig: 'scripts/main.js',
+    options: {
+      application: {
+        overwrite: {
+            'tobeoverwrotenmodulename': 'ToBeOverWriteModuleName'
+        }
+      }
     }
   }
 }

@@ -5,7 +5,7 @@ var _ = require('lodash');
  * @param dependencyGraph -- bower dependency graph generated from bower utility
  * @param excludedDependencies -- excluded dependencies
  */
-function buildConfig(dependencyGraph, excludedDependencies, applicationName) {
+function buildConfig(dependencyGraph, excludedDependencies, application) {
 
     if (!dependencyGraph.dependencies) return;
 
@@ -27,9 +27,16 @@ function buildConfig(dependencyGraph, excludedDependencies, applicationName) {
     });
 
     // application shim wiring
-    applicationName = applicationName || dependencyGraph.pkgMeta.name;
+    var applicationName = application.name || dependencyGraph.pkgMeta.name;
     if(dependencyGraph.pkgMeta){
         var applicationDependencies = _.keys(dependencyGraph.pkgMeta.dependencies);
+        if(application.exclude){
+            applicationDependencies = _.remove(applicationDependencies, function(n){ return application.exclude.indexOf(n) > -1; })
+        }
+
+        if(application.overwrite){
+            applicationDependencies = _.map(applicationDependencies, function(n){ return (application.overwrite[n])? application.overwrite[n]: n; })
+        }
         config.shim[applicationName] = {deps: applicationDependencies};
     }
     return config;

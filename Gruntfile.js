@@ -14,7 +14,12 @@ module.exports = function (grunt) {
             test: {
                 rjsConfig: 'test/main.js',
                 options:{
-                    applicationName: 'app'
+                    application:{
+                        name: 'app',
+                        overwrite: {
+                            'angular': 'ng'
+                        }
+                    }
                 }
             }
         }

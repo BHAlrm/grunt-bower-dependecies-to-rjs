@@ -5,7 +5,7 @@ function task() {
     var options = this.options({
         config: this.data.rjsConfig,
         exclude: [],
-        applicationName: ''
+        application: {}
     });
 
     bowerShimRJS(options, this.async());
