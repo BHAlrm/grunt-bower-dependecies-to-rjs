@@ -105,7 +105,7 @@ bowerShimToRjs: {
     rjsConfig: 'scripts/main.js',
     options: {
       application: {
-        exclude: 'yourCompressApplicationFileName'
+        exclude: ['dependecy1', 'dependency2']
       }
     }
   }
