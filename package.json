@@ -1,6 +1,6 @@
 {
   "name": "grunt-bower-dependencies-to-rjs",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "auto configuration the dependencies from bower.json to target rjs file.",
   "main": "libs/index.js",
   "scripts": {
